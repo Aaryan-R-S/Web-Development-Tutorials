@@ -1,0 +1,48 @@
+<!-- DOM MEANS DOCUMENT OBJECT MODEL -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+
+    <div class="cont" id="main">
+        <ul id="list">This is Nav 
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>Products</li>
+        </ul>
+    </div>
+
+    <div class="cont">
+        YO
+    </div>
+
+    <script>
+        //Selecting elements in different ways 
+         let x = document.getElementById('main');
+         console.log(x)
+
+         let y = document.getElementById('list');
+         console.log(y)
+
+         let z = document.getElementsByClassName("cont");
+         console.log(z)
+
+         let a = document.querySelector('.cont');
+         console.log("Seleceted Value ", a)
+         //Selects first container with class cont
+
+         let b = document.querySelector('#list>li');
+         console.log("Seleceted Value ", b)
+
+         let c = document.querySelectorAll('#list>li');
+         console.log("Seleceted Value ", c)
+    </script>
+
+</body>
+</html>

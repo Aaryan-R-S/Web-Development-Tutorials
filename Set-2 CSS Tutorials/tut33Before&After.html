@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Pseudo Selectors</title>
+    <style>
+        /* SEE TOOLTIP ALSO IN W3 SCHOOL */
+        body {
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        img {
+            opacity: 0%
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 5px 20px;
+            margin: 5px 10px;
+            font-size: 20px;
+        }
+
+        section {
+            margin: 50px 20px;
+            color: white;
+            height: 40vh;
+            justify-items: center;
+            align-items: center;
+        }
+
+        /* To insert content before & After */
+
+        section::after {
+            content: "This is a after content";
+        }
+        
+ /* 2 Methods for bg img with reduced visibilty(imp) */
+
+/* 1st Method */
+        /* section::before {
+            content: "";
+            background-image: url(https://source.unsplash.com/random?food);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+   background-attachment: fixed;  
+   --(fixed) means always be seen
+   -- (scroll) means will not be seen when scrolled
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            opacity: 60%;
+        } */
+
+
+/* 2nd Method */
+        img{ 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            opacity: 60%;  
+             }
+
+        .sec {
+            padding: 10px;
+        }
+
+        .h1 {
+            font-family: cursive;
+            font-size: 50px;
+            padding: 5px;
+        }
+
+/* background: linear-gradient(angle, color1, color2, color3 , so on); */
+/* background: radial-gradient(circle, red, yellow, green); */
+    </style>
+</head>
+
+<body>
+    <img src="https://source.unsplash.com/random?food" alt="Oops">
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="item">Home</li>
+                <li class="item">About us</li>
+                <li class="item">Contact</li>
+                <li class="item">Events</li>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="h1">Welcome to Coding World</h1>
+            <p class="sec">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam mollitia et eligendi
+                numquam placeat maiores nesciunt molestias dolorum nam laborum.</p>
+        </section>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text Shadow</title>
+    <style>
+        .cont{
+            display: flex;
+        }
+        .card{
+           background-color: burlywood;
+           padding: 10px;
+           margin: 10px;
+           font-family: cursive;
+
+           /* box_shadow: offset X, offset Y, blur radius, spread radius */
+           box-shadow: 10px 10px 3px 3px gold;
+           /* Use - for top left (default bottom right) */
+           /* box-shadow: -10px -10px  gold; */
+
+           /* Use inset for shadow within box */
+           /* box-shadow: inset 10px 10px 3px 3px gold; */
+        }
+
+        h1{
+            text-shadow: 5px 5px 2px gold;
+        }
+
+        img{ 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            opacity: 90%;  
+             }
+
+    </style>
+</head>
+<body>
+
+    <img src="https://source.unsplash.com/random?sea" alt="Oops">
+
+    <div class="cont">
+        <div class="card" id="card$"><h1>Card 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe maiores numquam eum minus? Voluptatum similique sequi molestias facilis, optio dicta.</p>
+        </div>
+        <div class="card" id="card$"><h1>Card 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe maiores numquam eum minus? Voluptatum similique sequi molestias facilis, optio dicta.</p>
+        </div>
+        <div class="card" id="card$"><h1>Card 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe maiores numquam eum minus? Voluptatum similique sequi molestias facilis, optio dicta.</p>
+        </div>
+    </div>
+</body>
+</html>

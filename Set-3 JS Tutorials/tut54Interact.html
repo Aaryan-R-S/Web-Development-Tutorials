@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert, Confirm & Prompt</title>
+</head>
+<body>
+    <div class="cont">
+        This is a Page !
+    </div>
+    <script>
+
+        // //Alert in in-browser JavaScript - Doesn't return any value
+        let a = alert("This is a alert message")
+        console.log(a) //see undefined return in console
+
+
+        let name = prompt("What is your Name ?", "Guest")
+        console.log(name)
+
+
+        let deletepost = confirm("Do you really want to delete this post ?")
+        console.log(deletepost)
+       
+        if(deletepost){
+            console.log("Your post has been deleted")
+        }
+        else{
+            console.log("Your post is retrieved")
+        }
+
+        let Age = prompt("Enter your Age")
+        
+        if (Age>=18){
+            let T = alert("You are 18+ so Welcome to Web page !")
+        }
+        else{
+            let N = alert("You are not 18+ so no entry")        
+        }
+    </script>
+</body>
+</html>

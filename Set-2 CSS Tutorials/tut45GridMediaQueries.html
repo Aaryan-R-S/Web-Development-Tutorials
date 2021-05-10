@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Media Queries</title>
+    <style>
+        .cont {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:
+                'nav nav nav'
+                'section section aside'
+                'footer footer footer'
+            ;
+        }
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: burlywood;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'nav'
+                    'section'
+                    'footer'
+                ;
+            }
+
+            aside {
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+    
+        }
+
+        @media (max-width: 1000px) and (min-width:500px) {
+            body {
+                background-color: chartreuse;
+            }
+
+            .cont {
+                grid-template-areas:
+                    'nav'
+                    'section'
+                    'aside'
+                    'footer'
+                ;
+            }
+        }
+
+        @media (max-width: 1500px) and (min-width:1000px) {
+            body {
+                background-color: rgb(121, 33, 1);
+            }
+        }
+
+        @media (min-width:1500px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+        nav,
+        aside,
+        section,
+        footer {
+            border: 2px solid;
+            background-color: rgb(20, 220, 97);
+            padding: 23px;
+            font-family: cursive;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <nav>
+            <span>HOME</span>
+            <span>SERVICES</span>
+            <span>ABOUT</span>
+            <span>CONTACT</span>
+        </nav>
+
+        <section>
+            Learn about CSS in HINDI
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magnam laudantium soluta culpa exercitationem! Est molestias quis quae optio at voluptates quasi atque odit. Fugiat doloribus iste possimus atque esse. Quidem minima, iusto maiores dicta impedit inventore hic vitae unde recusandae aut numquam vel nobis iste ratione atque ducimus libero? Sapiente et soluta amet. Earum tempora consequatur eum, cum, pariatur necessitatibus, voluptas excepturi unde aperiam iure dolorem. Impedit dolores ipsa optio pariatur nisi ratione nulla, possimus cupiditate, quis perferendis repudiandae?
+        </section>
+
+        <aside>
+            More about us
+        </aside>
+
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </footer>
+    </div>
+</body>
+
+</html>

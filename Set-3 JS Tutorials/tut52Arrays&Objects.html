@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="cont">Hi!</div>
+    <script>
+
+ // Primitive variables
+        let var1= 23
+        let var2 =true
+        let var3 =false
+        let var4 =undefined
+        let var5 =null
+        let var6 ="String"
+
+// This is array with objects
+        let Employee ={
+            Name : "ARS",
+            // Key : Value
+            Age : 18,
+            Hobby :"Coding",
+            Sports : "Karate"
+        }
+        console.log(Employee)
+
+
+// This is shortcut 
+// See diff brackets used at differnt time
+        // let var7 =["ARS", 373, undefined, null, true,false]
+        // OR use this method where no keys are written only values 
+        let var7 =new Array("ARS", 373, 34,32,undefined, null, true,false)
+
+        console.log(var7)
+        console.log(var7.length)
+        console.log(var7.sort())
+        // Sort on basis of incearsing size & alphabetic order
+        console.log(var7.push("Hi"))
+
+        let var8 = new Array(23, 45)
+        console.log(var8)
+        // This wil give   -   empty x 23
+        let var9 = new Array(23)
+        console.log(var9)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+
+    <div class="cont">This is Arrow function tut</div>
+
+    <script>
+        //Arrow function ()=> is shortcut in case where we are defining function ....but still prefer long one 
+
+
+     function a(){
+         console.log("Good Morning !");
+     }
+     a();
+
+     //Shortcut --
+    //        let b=()=>{
+    //              console.log('Again Good Morning!')
+    //                   }
+    //             b();
+
+
+     function yo(){
+         console.log("Yo")
+     }
+     setInterval(yo , 3000)
+
+    // Shortcut--
+    //        setInterval( ()=> {console.log("yo")} , 3000)
+
+
+    let x = new Array( "ARS1" , "ARS2" , "ARS3" , "ARS4" )
+     for(element of x){
+        console.log("G.M.! "+ element)
+     }
+    </script>
+
+</body>
+</html>

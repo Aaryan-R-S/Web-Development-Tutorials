@@ -1,0 +1,20 @@
+Watch vid tuts from Tuts 89 - 100 -- Web Development -- Code With Harry
+
+
+Install PuTTY or use Win Shell ---
+
+In shell type - ssh USER@IPAddress (as given by Server)
+& then type password
+
+At starting you are at root
+
+cd x                   --  opens x folder/file
+cd /                   --  go to root
+cd ../                 --  one folder back
+pwd                    --  name of Present Working Directory
+ls                     --  List of files in pwd
+
+Watch vid tuts from Programming with Harry ----- Git & Github tuts playlist
+
+
+---------FOR SIGN UP & SIGN IN(requires model+setup !) REFER GEEKS FOR GEEKS -----

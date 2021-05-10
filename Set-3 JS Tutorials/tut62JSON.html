@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in JS</title>
+</head>
+<body>
+    <div class="cont">Hi!</div>
+    <script>
+
+    //This is object
+       let JSONobj={
+           name: "ARS",
+           channel: "Code With ARS",
+           friend: "Yo" ,
+           food: "Pizza"     ,
+        }
+        console.log(JSONobj)
+ 
+        //Converted to string
+        let x = JSON.stringify(JSONobj)
+        console.log(x)
+
+        //Now  can be used as a string carry out learnt function like : 
+        console.log(x.replace("food", "fast food"))
+        console.log(x.toUpperCase())
+
+        //Reconverted back to object
+        let y = JSON.parse(x)
+        console.log(y)
+
+
+    </script>
+</body>
+</html>

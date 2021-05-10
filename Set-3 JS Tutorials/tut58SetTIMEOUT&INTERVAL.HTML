@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <div class="cont">
+        This is a container! <br>
+        Time now is <span id="time"></span> 
+    </div>
+
+    <script>
+        console.log("This is tut 58")
+        //setTIMEOUT allows us to run the function once after the interval of time 
+        //serINTERVAL allows us to run the function repeatedly after the interval of time 
+        //clearTIMEOUT or clearINETRVAl will make them futile 
+
+        function go(name, x){
+            console.log("Hello! Good Morning !"+ name + " " + x)
+        }
+
+
+        setTimeout(go, 1000, "ARS sT", "Take Care") 
+     // setTimeout(go(), 1000, "ARS", "Take Care")  is wrong as no need of ( )
+        //Time is in milli seconds
+        //ARS & Take Care corresponds to   name & x   respectively
+
+        let z = setTimeout(go, 1000, "ARS cT", "Take Care") 
+        console.log(z)
+        clearTimeout(z)
+
+
+
+         setInterval(go, 2000, "ARS sI", "Take Care")
+
+        //Use clearinterval same as cleartimeout :--
+
+    //    let a = setInterval(go, 2000, "ARS1", "Take Care")
+    //    console.log(a)
+    //    clearInterval(a)
+
+    function samaybtade(){
+        console.log(new Date()) ;
+        document.getElementById("time").innerHTML = new Date();
+    }
+    setInterval(samaybtade,1000)
+
+    </script>
+
+</body>
+</html>

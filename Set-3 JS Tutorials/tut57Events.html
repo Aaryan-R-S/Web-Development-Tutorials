@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events listener</title>
+    <style>
+        #btn {
+            font-family: cursive;
+            background-color: khaki;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Browser Events :
+    1. Click
+    2. Context Menu (Right Click)
+    3. Mouse Over/Out
+    4. Mouse Down/Up
+    5. Submit
+    6. Focus
+    7. DOM Content Loaded
+    8. Transition End
+    9. Mouse Move -->
+
+    <div class="cont">
+        <h1>This is my heading !</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mollitia neque eius cumque
+            asperiores dolorem omnis. Fugiat officia labore aliquam quisquam sunt nemo quibusdam harum nulla vitae
+            totam, corrupti laborum sapiente quam debitis amet assumenda rem beatae expedita molestias. Veritatis amet
+            quisquam facere eligendi iusto quaerat dicta quidem. Optio sit placeat eveniet deserunt rerum, voluptate
+            fugiat assumenda! Harum nisi ducimus repellendus et illum, perspiciatis voluptatem labore veniam hic ex
+            quibusdam nam aspernatur asperiores minus dicta laborum cupiditate mollitia magni libero minima totam
+            reiciendis ab officiis! Ab pariatur sint asperiores praesentium quod deserunt voluptate nesciunt magnam ad
+            soluta velit incidunt ducimus odio numquam tempore quae eum labore error qui, tempora enim explicabo
+            blanditiis iste harum. Cumque ex sequi quos dicta similique, fugiat possimus odio, porro labore cupiditate
+            magnam, optio eveniet pariatur quidem. Veniam porro enim hic excepturi aspernatur numquam quia nobis impedit
+            vel obcaecati expedita ipsa, repellat accusantium ea maxime illum totam autem doloremque soluta natus ut
+            quod corrupti? Eaque aperiam iusto nobis perferendis repudiandae, fugiat vitae. Magnam laudantium excepturi
+            eos ducimus voluptas inventore nesciunt et? Eum dolore voluptate nesciunt delectus saepe labore hic numquam
+            iure nam facere, quisquam, laborum placeat dolor rem aspernatur distinctio iste vel debitis eveniet ducimus
+            vero!</p>
+    </div>
+    <button id="btn" onclick="showhide()">Show/Hide Para</button>
+
+    <script>
+        //Old method 
+        function showhide() {
+            let p = document.getElementById("para")
+            if (p.style.display != "none") {
+                p.style.display = "none";
+            }
+            else {
+                p.style.display = "block";
+            }
+        }
+
+        // != means not equal to
+
+        //Another way of adding any event listeners (prefer this )
+
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click", function run() {
+            let p = document.getElementById("para")
+
+            if (p.style.display != "none") {
+                p.style.display = "none";
+            }
+            else {
+                p.style.display = "block";
+            }
+        } )
+
+
+        let p = document.getElementById("para")
+        //Mouseover
+        p.addEventListener('mouseover', function run() {
+            console.log(alert("Mouse on Text !"))
+            console.log("Mouse on Text !")
+        })
+
+        //Mouseout
+        p.addEventListener('mouseout', function run() {
+            console.log(alert("Mouse outside Text !"))
+            console.log("Mouse outside Text !")
+        })
+
+    </script>
+
+</body>
+
+</html>

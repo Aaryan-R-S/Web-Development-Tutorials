@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes & nth Child Pseudo Selectors</title>
+    <style>
+        .cont,
+        .list {
+            text-align: center;
+            width: 100px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 20px;
+            border: 5px solid;
+        }
+
+        a[target] {
+            font-family: cursive;
+        }
+
+        .list {
+            list-style-type: none;
+        }
+
+        li:nth-child(2n+1) {
+            color: rgb(1, 3, 1);
+            background-color: rgb(100, 250, 54);
+        }
+
+  /* HIGLIGHT FIRST LETTER OR LINE OF PARA or SELECTED text */
+  
+              p::first-letter {
+                color: #ff0000;
+                font-size: xx-large;
+              }
+
+              p::first-line {
+                color: #0000ff;
+                font-variant: small-caps;
+              } 
+
+              p::selection {
+                color: red;
+                background: yellow;
+}
+   
+
+
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit esse tempore sed at fuga quibusdam architecto recusandae, inventore excepturi qui id neque atque ipsum nesciunt eveniet amet asperiores nisi aspernatur!</p>
+    <div class="cont">
+        <h4> <a href="https://google.com" target="_blank">GO to Google</a></h4>
+        <h4> <a href="https://twitter.com">GO to Twitter</a></h4>
+        <form action="backend.php" class="form">
+            <input type="text" name="name" placeholder="Your Name"><br>
+            <input type="password" name="pasword" placeholder="Your Password"><br>
+            <input type="submit" value="Login"><br>
+        </form>
+    </div>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & More Designing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .container{
+                text-align: center;
+                border: 2px solid #a10000;
+                margin: auto;
+                padding:0px 20px 5px 20px ;
+                border-radius: 10px;
+                background-color: coral;
+                width: fit-content;
+        }
+        .btn{
+       background-color: khaki ;
+       margin: auto;
+       padding:6px 20px 6px 20px ;
+       cursor: pointer;
+       font-size: 20px;
+       border: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        /* All these below given are pseudoselectors  */
+        a:hover{
+        color: gold;
+        background-color: rgb(241, 226, 82);
+        }
+        input:hover{
+        color: gold;
+        background-color: rgb(241, 226, 82);
+        }
+        a:visited{
+        color: rgb(80, 17, 253);
+        }
+        a:active{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="cont1">
+       <u> <h2 style="font-family: cursive;">This is my Heading!</h2></u>
+        <p style="font-family: cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dolor quod obcaecati suscipit incidunt ipsum temporibus quasi ipsam dolorum.</p>
+       <strong> <a href="https://google.com" class="btn">Read More</a></strong>
+       <strong> <input type="button" class="btn" value="Contact us"></input></strong>
+        <!-- OR use    <button>Contact us</button>      -->
+    </div>
+
+
+</body>
+</html>

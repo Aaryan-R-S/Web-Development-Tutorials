@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders & Backgrounds</title>
+    <style>
+       #firstpara{
+           background-color: greenyellow;
+           height: 100px;
+           width: 500px;
+           /*This code [ border : 2px solid indigo; ] is equivalen to :- */
+           border-width: 2px;
+           border-color: indigo;
+           border-style: solid; 
+           /* Above 3 lined code can be condense to above commented code ! */
+           border-radius: 15px;
+                 }
+        #secondpara{
+            background-color: lightcoral;
+            height: 100px;
+            width: 500px;
+            border-top: blueviolet;
+            border-bottom: blueviolet;
+            border-top-left-radius: 15px; 
+            border-bottom-right-radius: 15px; 
+                 }
+        #thirdpara{
+            height: 100px;
+            width: 500px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTliW1dR4iurvoEVlbgVyyFcPazAigkTMSqEw&usqp=CAU);
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* Repeat x & y will make it repeat in x & y axis */
+            background-size: contain;
+            background-position:center right;
+            border: 2px solid ; /*Default color is black*/
+        }
+    </style>
+</head>
+<body>
+   
+    <h3>This is heading</h3>
+    <p id="firstpara">This a paragraph.</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This another paragraph.</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This yet another paragraph.</p>
+
+</body>
+</html>

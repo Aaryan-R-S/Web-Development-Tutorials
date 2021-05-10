@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JS</title>
+</head>
+<body>
+    <div class="cont">
+        This is Math Object Tutorial!
+    </div>
+
+    <script>
+        //Printing Math Object constants
+        console.log(Math)
+        console.log("The value of Math.E is",Math.E)
+        console.log("The value of Math.PI is",Math.PI)
+        console.log("The value of Math.LN10 is",Math.LN10)
+        console.log("The value of Math.LN2 is",Math.LN2)
+        console.log("The value of Math.SQRT1_2 is",Math.SQRT1_2)
+
+        // E: 2.718281828459045
+        // LN2: 0.6931471805599453
+        // LN10: 2.302585092994046
+        // LOG2E: 1.4426950408889634
+        // LOG10E: 0.4342944819032518
+        // PI: 3.141592653589793
+        // SQRT1_2: 0.7071067811865476
+        // SQRT2: 1.4142135623730951
+
+        let a=23.24;
+        let b=2;
+
+        console.log("The value of a and b is ",a,b)
+        //Round up
+        console.log("The value of a and b rounded is ", Math.round(a), Math.round(b) )
+        //Power
+        console.log("4 raised to power 5 is ", Math.pow(4,5))
+        //Sqrt
+        console.log("Sqrt of 10 is " , Math.sqrt(10))
+        //Ceil & Floor
+        console.log("4.574 round up is " , Math.ceil(4.574))
+        console.log("4.574 round down is " , Math.floor(4.574))
+        //Absolute Value
+        console.log("The absolute value of 5.66 is ", Math.abs(5.66))
+        console.log("The absolute value of -5.66 is ", Math.abs(-5.66))
+        //Trigo
+        console.log("The value of sin(1) is ", Math.sin(1))
+        console.log("The value of cos(PI/2) is ", Math.cos(Math.PI/2))
+        console.log("The value of tan(PI/3) is ", Math.tan(Math.PI/3))
+        //Min&Max
+        console.log("The min. value of 4, 5, 6 is ", Math.min(4,5,6))
+        console.log("The max. value of 4, 5, 6 is ", Math.max(4,5,6))
+        //Random No. b/w (0 & 1) default
+        console.log("The value of random no. is ", Math.random() )
+        //Random no. b/w a & b ==>> 
+        // a+ (b-a)Math.random()..Remember random gives value from [0,1] only
+        //Random no. b/w  1-100
+        let x = 1
+        let y = 100
+        console.log(x+(y-x)*Math.random())
+        console.log( Math.round( x+(y-x)*Math.random() ) )
+
+    </script>
+</body>
+</html>

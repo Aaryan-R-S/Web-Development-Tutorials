@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* In flexbox Main & cross axis are horizontal & vertical resp. */
+             .container{
+                 margin: 20px;
+                 border: 5px solid brown;
+                 display: flex;
+                 background-color: burlywood;
+                 /* Display flex will initialize container as flexbox */
+                 flex-direction: row;
+                 /* Flex direction default value is ROW . U can also use column, row reverse & column reverse*/
+                 flex-wrap: wrap;
+                 /* For making flex more responsive */
+                 /*Use this as one substitute for above two    flex-flow: column wrap-reverse; */
+
+                 /* Justify works in horizontal direction */
+                 justify-content: center;
+                 /* justify-content: space-between;
+                 justify-content: space-around; */
+                 /* justify-content: space-evenly; */
+
+                 /* Align works in vertical direction */
+                 align-items: flex-start;
+                 align-items: stretch;
+                 
+             }
+             .items{
+                 background-color: teal;
+                 border: 5px solid;
+                 width: 100px;
+                 height: 100px;
+                 margin: 5px;
+             }
+             
+             /* order is used to give preference */
+             /* Flex grow & shrink decides how much flex box will grow & shrink on responsiveness */
+             #items11{
+                 order: 2;
+                 flex-grow: 1;
+                 flex-shrink:30 ;
+             }
+             #items12{
+                order: 10;
+                flex-grow: 2;
+                flex-shrink:2 ;
+             }
+             #items13{
+                   order: -1;
+                   flex-grow: 3;
+                   flex-shrink: 1;
+             }
+             
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox tutorial</h1>
+<div class="container">
+    <div class="items" id="items1">First Box</div>
+    <div class="items" id="items2">Second Box</div>
+    <div class="items" id="items3">Third Box</div>
+    <div class="items" id="items4">Fourth Box</div>
+    <div class="items" id="items5">Fifth Box</div>
+    <div class="items" id="items6">Sixth Box</div>
+</div>
+
+<div class="container">
+    <div class="items" id="items11">First Box</div>
+    <div class="items" id="items12">Second Box</div>
+    <div class="items" id="items13">Third Box</div>
+</div>
+</body>
+</html>

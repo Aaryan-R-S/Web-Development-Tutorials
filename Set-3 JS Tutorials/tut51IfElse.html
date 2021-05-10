@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope & Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+    </div>
+    <script>
+
+        var str1 = "This is a stringP"
+        var str1 = "This is a stringL"
+        console.log(str1)
+
+
+// Prefer let as it is global & can be defined within {}
+        let a = "P"
+        // let a = "Y" This will give error
+        { 
+        let a = "L"
+        console.log(a)
+        // This a is valid in this { }only
+        }
+        console.log(a)
+
+
+        const x ="This can't be changed !"
+     // const x = "I want it to be changed ! "
+        console.log(x)
+
+
+        let age = 19
+        if(age<18)
+        {console.log("You are not Eligible !")}
+        else if(age == 18)
+        {console.log("You have to fill form")}
+        else if(age == 19)
+        {console.log("You may fill form")}
+        else
+        {console.log("You are Eligible !")}
+
+
+// Both are almost same if-else & switch-case
+        const cups = 44
+        switch (cups) {
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+        
+            case 42:
+                console.log("The value of cups is 42")
+                break;
+        
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+        
+            case 44:
+                console.log("The value of cups is 44")
+                break;
+        
+        // If no value matches then
+            default:
+            console.log("The value of cup is none of 41,42,43 & 44")
+                break;
+        }
+        // If break is not used then all values will be printed
+
+    </script>
+</body>
+</html>

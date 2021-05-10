@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            /* Box sizing is used to give width preference over padding & margin */
+            margin: 0px;
+            padding: 0px;
+        }
+        /* ELEMENT then PADDING then BORDER then Margin */
+
+        .container{
+            background-color: rgb(13, 245, 187);
+            border: 2px solid rgb(48, 49, 97);
+            padding: 50px;
+            margin: 34px;
+            /* Padding or margin : top right bottom left; LIKE padding: 34px 56px 34px 56px; */
+            /* Padding or margin : top/bottom right/left; LIKE padding: 34px 56px ; */
+            /* U can also use padding or margin for bottom or top or left or right */
+            border-radius: 23px;
+            width: 500px;
+                  }
+         body{
+             background-color: rgb(128, 196, 184);
+         }         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my Heading !</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis quisquam aut aperiam nesciunt, voluptas dignissimos suscipit praesentium perspiciatis exercitationem. </p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Heading !</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis quisquam aut aperiam nesciunt, voluptas dignissimos suscipit praesentium perspiciatis exercitationem. </p>
+    </div>
+     <div class="container">
+        <h3>This is my Heading !</h3>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis quisquam aut aperiam nesciunt, voluptas dignissimos suscipit praesentium perspiciatis exercitationem. </p>
+    </div>
+
+</body>
+</html>

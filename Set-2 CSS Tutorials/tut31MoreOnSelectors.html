@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+    <style>
+        h1{
+            background-color: khaki;
+            text-align: center;
+        }
+        /*Below means inside not how much inside applied to 1*/
+        div p{
+              background-color: lightgoldenrodyellow;
+              border: 2px solid;
+        }
+        div li p{
+            background-color:lightgoldenrodyellow;
+        }
+        /*Below > means direct child applied to 4*/
+        div > p{
+            background-color: lightgreen;
+            border: 2px solid;
+        }
+        /* + means sibling aage or piche so applied to 3 & 5*/
+        div + p{
+            background-color: lightseagreen;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="row">
+        <ul>
+       <li> <p>This is 1 paragraph</p> </li>
+       <li>This is 2 paragraph</li>
+    </ul>
+    </div>
+    <p>This is 3 outermost paragraph</p>
+    <div class="col">
+        <p>This is 4 another paragraph</p>
+    </div>
+      <p>This is 5 outermost paragraph</p>
+    
+</body>
+</html>

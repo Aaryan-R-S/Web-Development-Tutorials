@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{
+            background-color: black;
+        }
+             .cont{
+                 display: grid;
+                 /* grid-gap: 10px; */
+                 /* grid-template-columns: 100px 100px 100px; */
+
+                 grid-template-columns: repeat( auto-fit, minmax(100px, 400px));
+                 /* here min & max are resp widths limit of a grids */
+                 justify-content: center;
+                 /* text-align: center; */
+             }
+
+             .items{
+                 border: solid black;
+                 background-color: powderblue;
+                 padding: 23px;
+             }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div>
+        <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+        <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div>
+        <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+        <div class="items">Item-1</div>
+        <div class="items">Item-2</div>
+        <div class="items">Item-3</div>
+        <div class="items">Item-4</div>
+        <div class="items">Item-5</div>
+        <div class="items">Item-6</div>
+        <div class="items">Item-7</div>
+    </div>
+</body>
+</html>

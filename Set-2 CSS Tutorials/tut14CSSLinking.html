@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Linking</title>
+
+    <!-- This is Internal CSS -->
+    <style>
+           span{color: lightcoral;}
+           p{color: lightcoral; background-color: lightseagreen;}
+    </style>
+
+    <!-- This is External CSS -->
+    <link rel="stylesheet" href="tut14CSSLinking.css">
+
+    <!-- Use !important for making internal css being given preference over inline css -->
+    <!-- Example : 
+        <style>
+           span{ color: lightcoral; !important } 
+        </style>      -->
+
+</head>
+<body>
+    <H3>This is Inline CSS !</H3>
+
+    <!-- This is Inline CSS -->
+    <span style="color: indigo;  background-color: greenyellow;">This tutorial will teach you everything about HTML/CSS !</span>
+
+    <!-- This is External CSS -->
+    <span>This tutorial will teach you everything about HTML/CSS !</span>
+
+    <!-- This is Internal CSS -->
+    <P>This tutorial will teach you everything about HTML/CSS !</P>
+
+    <!-- Inline CSS will be given preference over Internal CSS & External CSS -->
+    <!-- Out of External & Interanl CSS one which is written below will be given preference -->
+</body>
+</html>

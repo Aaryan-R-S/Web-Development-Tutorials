@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* Position - Static(Default),Absolute(relative to first parent position), Relative(relative to normal position) , Fixed(Relative to browser window) & Sticky */
+        .cont1, .cont2{
+            height: 500px;
+            border: 5px solid black;
+        }
+        .class{
+            border: 3px solid ;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #box3{
+            position: relative;
+            top: 30px;
+        }
+        #box13{
+            position: absolute;
+            top: 300px;
+        }
+        #box4{
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+        }
+        #box14{
+            position: sticky;
+            top: 350px;
+        }
+        .cont1, .cont2{
+background-color: tan;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont1">
+    <div class="class" id="box1">1</div>
+    <div class="class" id="box2">2</div>
+    <div class="class" id="box3">3</div>
+    <div class="class" id="box4">4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="cont2">
+    <div class="class" id="box11">11</div>
+    <div class="class" id="box12">12</div>
+    <div class="class" id="box13">13</div>
+    <div class="class" id="box14">14</div>
+    </div>
+</body>
+</html>

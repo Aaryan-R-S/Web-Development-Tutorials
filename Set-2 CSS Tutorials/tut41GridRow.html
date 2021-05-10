@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Row</title>
+    <style>
+             *{
+                 margin: 0px;
+             }
+             .cont{
+                 display: grid;
+                 background-color: black;
+                 grid-template-rows: repeat(4 auto);
+                 grid-template-rows: 1fr 4fr 4fr;
+                 grid-auto-rows: 2fr;
+                 /* Default for lefted rows is 1 fr but by using grid auto rows u can change it */
+
+                 grid-template-columns: 2fr 3fr 1fr;
+
+                 /* use also grid gap instead of margin */
+                 grid-gap:20px;
+             }
+             .item{
+                 height: 0.5rem;
+                 background-color: gray;
+                 padding: 5px;
+                 border:solid rgb(255, 8, 0);
+             }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>

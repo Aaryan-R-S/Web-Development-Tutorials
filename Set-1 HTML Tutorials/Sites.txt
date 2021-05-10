@@ -1,0 +1,32 @@
+Code with Harry -- Web Development Playlist
+W3Schools.com -- for any doubt or help on website parts colors Refer It
+
+
+Web CSS + JS tempelate --
+ 1. Bootstrap
+ 2. Tailblocks
+
+Fonts -- Google Fonts
+
+Pictures HD Bgs --
+1. Pixabay
+2. https://source.unsplash.com/random/sizexsize?topic
+
+Logos -- UXWING
+
+Icons -- Flaticon   OR    Icons F.A. + Icons F.A. Cheatsheet -- U have to copy (Script Code)as script tag from first site & then u can inlcude icon as <i class="givenClassOfIconInSecondSite" style="color:red(defaultBlack); font-size:20px;"></i>
+
+Maps -- Mapbox
+
+Themes -- Prism Js Themes
+
+Audio -- www.fesliyanstudios.com or www.freesoundslibrary.com
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "tut69npm",
+  "version": "1.0.0",
+  "description": "This is the best package ever built by someone",
+  "main": "tut69NPM.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "ARS",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "express": "^4.17.1",
+    "slugify": "^1.4.5"
+  }
+}

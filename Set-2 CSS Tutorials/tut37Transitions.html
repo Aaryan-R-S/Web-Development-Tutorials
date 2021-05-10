@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .cont {
+            display: flex;
+        }
+
+        h3 {
+            color: wheat;
+        }
+
+        #bocks{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 38, 0);
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            /* almost same as animations */
+            transition-property: background-color;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out;
+
+            /* OR USE */
+            /* transition: background-color 2s ease-in 1s; */
+        }
+
+        #bocks:hover {
+            background-color: rgb(121, 32, 204);
+        }
+
+
+        #boxn {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 38, 0);
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+
+            /* Use all for all properties */
+            transition: all 4s ease-out 0.1s;
+        }
+
+        #boxn:hover {
+            background-color: rgb(121, 32, 204);
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>This CSS Transition Tutorial !</h3>
+    <div class="cont">
+        <div id="bocks">
+            This is my BOX !
+        </div>
+    </div>
+
+    <h3>This CSS Transition Tutorial !</h3>
+    <div class="cont">
+        <div id="boxn">
+            This is my BOX !
+        </div>
+    </div>
+
+</body>
+
+</html>

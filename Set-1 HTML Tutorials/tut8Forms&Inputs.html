@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML Forms Tutorial</h2>
+    <!-- In form action we have to write abt location where data will be saved -->
+    <!-- In name in input write about location within backend where particular data will be saved -->
+   
+    <form action="backend.php" autocomplete="on">
+       <!-- AUTOCOMPLETE means previous filled entries will be recommended while filling form again -->
+        <div>
+           <label for="myname"> Name : </label><input type="text" name="myname" id="myname">
+       </div> <br>
+       
+    <!-- For label us Id not class or name -->
+
+       <div>Roll : <input type="number" name="myroll"></div> <br>
+       <div>Email : <input type="email" name="myemail"></div> <br>
+       <div>DOB : <input type="date" name="mydob"></div> <br>
+       <div>Age : <input type="number" name="myage"></div> <br>
+       
+      <div> <label for="myincome">Annual Income :</label>
+       <select name="myincome" id="myincome">
+           <option value="low">Less than 1 lakh</option>
+           <option value="medlow">1 lakh - 4 lakh</option>
+           <option value="midhigh" selected>4 lakh - 8 lakh</option>
+           <option value="high">More than 8 lakh</option>
+       </select></div><br>
+
+       
+       <div>Gender : Male<input type="radio" name="mygender"> Female <input type="radio"      name="mygender"> Others <input type="radio" name="mygender">
+       </div> <br>
+       <div>Only Child : <input type="checkbox" name="myfamilyinfo" checked></div> <br>
+       <div>Do you agree ? : <input type="submit" value="Yes, Submit"> <input type="reset" value="No, Reset"></div> <br>
+       
+       <br>Form Feedback<br><textarea name="mytext"  cols="90" rows="5"></textarea>
+
+    </form>
+
+
+    <!-- GET MEANS DATA IS SENT IN FORM OF URL WHILE POST MEANS DATA IS IN FORM OF PACKET SECURED -->
+    <form action="/action_page.php" method="GET" autocomplete="on">
+        <!-- FIELDSET & LEGEND -->
+        <fieldset>
+          <legend>Personalia:</legend>
+          <!-- TYPE RANGE -->
+          <input type="range" id="a" name="a" value="50">
+          <!-- TYPE FILE -->
+          <input type="file" id="myfile" name="myfile"><br><br>
+          <!-- MIN & MAX -->
+          <input type="number" id="quantity" name="quantity" min="1" max="5">
+          <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"  readonly>
+          <!-- Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+            above step=10 means no. with interval of 10s are allowed like -20,-10,0,10,20,70,100,etc. -->
+          <!-- READONLY means not editable -->
+          <!-- similarly DISABLE, autofocus , SIZE="64" (WIDTH OF TAG), MAXLENGTH="5" , MULTIPLE -->
+
+          <!-- Tel & REQUIRED & PATTERN(js like ) -->
+          <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <!-- important _blank for new tab -->
+          <input type="submit" value="Submit" formtarget="_blank">
+        </fieldset>
+      </form>
+
+
+</body>
+</html>

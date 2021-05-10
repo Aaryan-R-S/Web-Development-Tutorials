@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+
+<body>
+    <script>
+        var str = "This is string"
+        console.log(str)
+
+        // first occurence of substring
+        // start with 0
+        var position = str.indexOf('is')
+        console.log(position)
+
+        // last occurence of substring
+        var position = str.lastIndexOf('is')
+        console.log(position)
+
+
+
+        // substring from a string
+        // substr(start from which position, end at which position)
+        var sub = str.slice(2, 6)
+        console.log(sub)
+
+        // slice & substring same 
+        var sub = str.substring(2, 6)
+        console.log(sub)
+
+
+        // substr(start from which position, length of string)
+        var sub = str.substr(1, 6)
+        console.log(sub)
+
+
+        // Replacing string
+        var rep = str.replace('string', 'ARS')
+        console.log(str)
+        console.log(rep)
+
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        //   Trim space at end & beginning only
+        var strN = "  yo     yo    "
+        console.log(strN)
+        console.log(strN.trim())
+        console.log(strN[3])
+
+        //  extract character
+        var char = str.charAt(2)
+        console.log(char)
+
+    </script>
+</body>
+
+</html>

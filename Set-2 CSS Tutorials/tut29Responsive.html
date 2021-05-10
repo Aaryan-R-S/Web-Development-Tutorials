@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 25px;
+            /* see #second css */
+        }
+        .container{
+            text-align: center;
+            font-size: 10px;
+            padding: 2px;
+            /* see #first css  */
+            border: 6px solid gold;
+            height: 100vh;
+            width: 50vw;
+            /* vh/vw means 100 % of viewport height/width */
+            /* prefer vh/vw over % */
+        }
+         #first{
+           font-size: 3em; /*so it will be approx 30px*/
+           /* Xem means X times of parent font size of container */
+           padding: 2em; /*Now padding will be 2 time sof font not of parent container (important)*/
+            }
+         #second{
+              font-size: 2rem; /*It will be 50 px*/
+              /* rem will be compared to base of html so dependent on browser size */
+              }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is Heading !</h1>
+        <h1 id="second">This is second Heading !</h1>
+        <h1 id="third">This is third Heading !</h1>
+    </div>
+</body>
+</html>

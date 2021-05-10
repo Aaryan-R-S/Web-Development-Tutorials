@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        *{ font-family: 'Charmonman', cursive;
+           text-align: center;
+           box-sizing: border-box;
+           background-color: burlywood;
+        }
+
+        .container{
+            width: 600px;
+            margin: auto;
+        }
+
+        .item{
+                border: 2px solid #a10000;
+                margin: 5px 10px ;
+                padding:0px 20px 5px 20px ;
+                border-radius: 10px;
+                background-color: coral;
+        }
+            /* Float is used to define position of content */
+        #computer{
+                float: left;
+                width: 46%;
+                clear: right;
+                /* Clear is used to prevent overlapping of contents.. Use if overlapping */
+        }
+        #stationary{
+                float: right;
+                width: 46%;
+        }
+
+        .hd{
+            border: 4px solid brown;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container hd" style="width: 900px; border-radius: 10px; background-color: coral;"><u><h1> Welcome to my Store !</div></h1></u>
+
+    <div class="container">
+        <div id="fruits" class="item">
+            <u><center><h3>Fruits</h3></u></center>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempora quas eius hic deserunt inventore qui esse aliquam consectetur quaerat.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="computer" class="item">
+           <u><center> <h3>Computers</h3></u></center>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempora quas eius hic deserunt inventore qui esse aliquam consectetur quaerat. </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="stationary" class="item">
+            <u><center><h3>Stationaries</h3></u></center>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempora quas eius hic deserunt inventore qui esse aliquam consectetur quaerat.</p>
+        </div>
+    </div>
+
+</body>
+</html>

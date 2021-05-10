@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* display: none; will hide element without leaving any empty space*/
+        /* visibility: hidden; will hide element leaving empty space*/
+        /* z index gives priority order in which element will be displayed in case of overlapping */
+        /* Its value can be any integer */
+        /* Its defined only for positioned element eg absolute , relative, sticky & fixed(not for static) */
+        #box1{background-color: green;
+              z-index: -12;
+               position:relative ;
+               top: 80px; }
+        #box2{background-color:yellow;
+             z-index: -13; 
+             position:relative ;
+               top: 5px;}
+               /* yellow will be hidden behind red */
+        #box3{background-color:blue; }
+        #box4{background-color: red;}
+
+    </style>
+</head>
+<body>
+    <!-- to generate below code write   div.box#box$*4    -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

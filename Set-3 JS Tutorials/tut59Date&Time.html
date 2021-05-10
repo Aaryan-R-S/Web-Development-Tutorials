@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+<body>
+    <div class="cont">
+        This is a container! <br>
+        Time now is <span id="time"></span> 
+    </div>
+
+   
+
+    <script>
+          console.log("This is a date & time tutorial !");
+
+          console.log(new Date());
+          
+          console.log(new Date(0)) ;//Reference time 
+          console.log(new Date(6000)) ;//Reference time +6 sec
+
+          console.log(new Date ("2030-01-18")); //YY-MM-DD
+
+        //   console.log(new Date(year, month, date, hours, minutes, seconds, milliseconds))
+        console.log(new Date (2394, 5, 29, 23, 36, 59, 13));
+
+        let x = new Date (2394, 5, 26, 23, 36, 59, 13)
+        console.log(x)
+
+        console.log("The year is ", x.getFullYear())
+        console.log("The date is ",x.getDate())
+        console.log("The day is ",x.getDay()) //0 stands for sun as week starts from mon (1)
+        console.log("The month is ",x.getMonth())
+        console.log("The hour is ",x.getHours())
+
+
+        function samay(){
+        console.log(new Date()) ;
+        //Two methods
+       // document.getElementById("time").innerHTML = new Date();
+        time.innerHTML = new Date()
+        }
+
+       setInterval(samay, 1000)
+
+    </script>
+
+</body>
+</html>
